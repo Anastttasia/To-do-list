@@ -10,18 +10,23 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1><img src="icon7.png" clacc="icon">
+            <h1><img src="icon7.png">
                 Список дел</h1>
         <div class="user-input">
-            <input id="input" type="text"><button onclick="addItem()">Отправить</button>
 
+            <input type="text" id="input" placeholder="Мне нужно..."><button id="button">+ Добавить</button>
+            
         </div>
         </div>
     </div>
     <div class="container">
         <div class="to-do-items">
-
+            <div class="checkBox-container">
+                <input type="checkbox" id="cb1">
+                <label for="cb1"></label>
+            </div>
         </div>
     </div>
+    <script src="to-do-list.js"></script>
 </body>
 </html>

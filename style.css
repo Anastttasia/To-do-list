@@ -74,15 +74,6 @@ body{
 
 }
 
-#cb1{
-    width: 30px;
-    height: 30px;
-}
-
-#cb1:focus{
-    box-shadow: 0 0 5px #100873;
-    border: 1px solid #100873;
-}
 
 .item{
     background-color: white;

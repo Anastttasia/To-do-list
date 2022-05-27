@@ -1,6 +1,5 @@
 
 //CONST
-const TRASH_BOX_ICON = 'trash1.png';
 const ITEMS_CONTAINER = document.getElementsByClassName('to-do-items')[0];
 const INPUT_LINE = document.querySelector("input");
 
@@ -21,16 +20,30 @@ function addItem(){
     let divParent = document.createElement('div');
     let divChild = document.createElement('div'); 
     let checkbox = document.createElement('input');
-    let trashMark = document.createElement("img");
+    let trashMark = document.createElement('input');
 
     divParent.className = "item";
     divParent.innerHTML = '<div>'+INPUT_LINE.value+'</div>';
-        
-    checkbox.type = 'checkbox';
-    divChild.appendChild(checkbox);
     
-    trashMark.src = TRASH_BOX_ICON;
-    trashMark.style.width = '30px';
+    divChild.style.display = 'flex';
+    divChild.style.alignItems = 'center';
+
+    checkbox.type = 'checkbox';
+    checkbox.style.width = '30px';
+    checkbox.style.height ='30px';
+    divChild.appendChild(checkbox);
+
+    trashMark.type = 'button';
+    trashMark.value = 'Удалить'; 
+    trashMark.style.fontFamily = 'Fredoka One, cursive';
+    trashMark.style.width = '80px';
+    trashMark.style.height ='30px';
+    trashMark.style.borderRadius = '50px'
+    trashMark.style.border = '1px solid red';
+    trashMark.style.marginLeft = '10px';
+    trashMark.style.color = '#FF7D73';
+    divChild.appendChild(trashMark);
+
     trashMark.addEventListener('click',function(){
         divParent.remove();
     })

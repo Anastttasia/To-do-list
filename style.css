@@ -79,6 +79,7 @@ body{
     background-color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: auto;
     border-radius: 2px;
@@ -99,6 +100,33 @@ body{
     margin: 0 5px;
 
 }
+
+.textBlock{
+}
+
+.deleteButton{
+    font-family: 'Fredoka One', cursive;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1.5px solid #e22865;
+    margin-left: 10px; 
+    color: #e22865;
+}
+
+.deleteButton:hover{
+    border: 1px solid rgb(207, 118, 118);
+    background-color: #e22865;
+    color: white;
+    box-shadow: 0 0 10px #8a173db4;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
 
 @media(max-width:768px){
     .header{
